@@ -1,6 +1,7 @@
 const {gql} = require('apollo-server');
 
 const typeDefs = gql`
+
 type Launch {
     id: ID!
     site: String
@@ -8,6 +9,7 @@ type Launch {
     rocket: Rocket
     isBooked: Boolean!
 }
+
 type Rocket {
   id: ID!
   name: String
